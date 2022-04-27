@@ -1,5 +1,5 @@
 # **ViReMaDocker**
-The above repository contains a Docker image for ViReMa version 0.25 with associated example data.
+The above repository contains a Docker image for ViReMa version 0.25 with associated example data. The original ViReMa files can be downloaded [here](https://sourceforge.net/projects/virema/).
 
 ## **What is ViReMa?**
 **ViReMa** is an algorithm developed by the [Routh and Johnson Labs](https://www.utmb.edu/routhlab/home) providing **"a versatile platform for rapid, sensitive and nucleotide-resolution detection of recombination junctions in viral genomes using next-generation sequencing data".**
