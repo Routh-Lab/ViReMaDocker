@@ -1,11 +1,11 @@
 # **ViReMa Docker**
-The above repository contains a Docker image for ViReMa version 0.25 with associated example data. The original ViReMa files can be downloaded [here](https://sourceforge.net/projects/virema/).
+The above repository contains a Dockerfile for ViReMa version 0.25 with associated example data. The original ViReMa files can be downloaded [here](https://sourceforge.net/projects/virema/).
 
 ## **What is ViReMa?**
 **ViReMa** is an algorithm developed by the [Routh and Johnson Labs](https://www.utmb.edu/routhlab/home) providing **"a versatile platform for rapid, sensitive and nucleotide-resolution detection of recombination junctions in viral genomes using next-generation sequencing data".**
 
 ## **Why Docker?**
-**Docker** makes setting up and detecting viral recombination events with ViReMa easy. Having a Docker image handles installation of program dependencies and versioning. Additionally, containers can be run on Windows, Mac, and Linux operating systems.
+**Docker** makes setting up and detecting viral recombination events with ViReMa easy. Having a Docker container handles installation of program dependencies and versioning. Additionally, containers can be run on Windows, Mac, and Linux operating systems.
 
 ## **Setup (~10 minutes)**
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/).
