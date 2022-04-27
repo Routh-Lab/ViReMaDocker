@@ -24,7 +24,7 @@ The above repository contains a Docker image for ViReMa version 0.25 with associ
 13. When finished, stop the container in Docker Desktop or using the command line.
 
 ## **Analysis**
-To analyze the SAM file, convert the file produced into a .BED file using "samtools" (not in the image). You can then create figures and visualizations by following tutorials [here](https://jayeung12.github.io/).
+To analyze the SAM file just produced in the tutorial, convert the file produced into a .BED file using "samtools" (not in the image). You can then create figures and visualizations by following tutorials [here](https://jayeung12.github.io/).
 
 ## **Details**
 <details>
