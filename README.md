@@ -5,13 +5,13 @@ The above repository contains a Docker image for ViReMa version 0.25 with associ
 **ViReMa** is an algorithm developed by the [Routh and Johnson Labs](https://www.utmb.edu/routhlab/home) providing **"a versatile platform for rapid, sensitive and nucleotide-resolution detection of recombination junctions in viral genomes using next-generation sequencing data".**
 
 ## **Why Docker?**
-**Docker** makes setting up and analyzing data with ViReMa easy. Having a Docker image handles installation of program dependencies and versioning. Finally, containers can be run on Windows or Mac operating systems. **Installation to example data takes roughly 10 minutes.**
+**Docker** makes setting up and analyzing data with ViReMa easy. Having a Docker image handles installation of program dependencies and versioning. Finally, containers can be run on Windows, Mac, and Linux operating systems.
 
 ## **Setup (~10 minutes)**
 1. Download [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 2. Download this GitHub repository's files as a .zip file and unzip it as a new folder.
 3. Open the command line on your operating system. The next three steps involve entering lines into the command line.
-4. Change the current directory using the command line to the folder with the file "virema" and the folder "src".
+4. Change the current directory using the command line to the folder you just unzipped with the file "virema" and the folder "src".
   - This command looks something like ```cd C:\Users\user\Documents\GitHub\ViReMaDocker``` replacing "C:\Users\user\Documents\GitHub\ViReMaDocker" with your folder path.
 5. Now, build the image with ```docker build -t virema . -f virema```. If you want to add your own data first, add appropriate files to the "src/TestData" folder. Messages should indicate if everything builds smoothly.
 6. You can now make a container using ```docker run -d -t virema```. Here, "virema" can be replaced with whatever you would like to call the container.
@@ -54,8 +54,6 @@ Runs ViReMa (Viral-Recombination-Mapper) from commmand line.
 
 ViReMa_GUI.py
 Runs ViReMa (Viral-Recombination-Mapper) from GUI (requires GOOEY).
-
-
 
 
 
