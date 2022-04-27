@@ -1,4 +1,4 @@
-# **ViReMaDocker**
+# **ViReMa Docker**
 The above repository contains a Docker image for ViReMa version 0.25 with associated example data. The original ViReMa files can be downloaded [here](https://sourceforge.net/projects/virema/).
 
 ## **What is ViReMa?**
