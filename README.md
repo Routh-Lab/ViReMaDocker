@@ -12,9 +12,9 @@ The above repository contains a Docker image for ViReMa version 0.25 with associ
 2. Download this GitHub repository's files as a .zip file and unzip it as a new folder.
 3. Open the command line on your operating system. The next three steps involve entering lines into the command line.
 4. Change the current directory using the command line to the folder you just unzipped with the file "virema" and the folder "src". This command looks something like ```cd C:\Users\user\Documents\GitHub\ViReMaDocker``` replacing "C:\Users\user\Documents\GitHub\ViReMaDocker" with your folder path.
-5. Now, build the image with ```docker build -t virema . -f virema```. If you want to add your own data first, add appropriate files to the "src/TestData" folder before building the image. Messages should indicate if everything builds smoothly.
-6. You can now make a container using ```docker run -d -t virema```. Here, "virema" can be replaced with whatever you would like to call the container.
+5. Now, build the image with ```docker build -t virema . -f virema```. If you want to add your own data first, add appropriate files to the "src/TestData" folder before building the image. Messages should indicate if everything builds smoothly. Here, the "virema" after "-t" can be replaced with whatever text you would like to tag the container with.
 7. Open Docker Desktop. Navigate to the "Containers/Apps" tab.
+6. You can now make a container using ```docker run -d -t virema```.
 8. If the container is running, hit "CLI". If the container is stopped, hit the "Start" button first.
 9. Type ```python ./ViReMa.py ./FHV_Genome_padded ./FHV_10k.txt FHV_recombinations.txt --Seed 20 --MicroInDel_Length 5``` into the "CLI". This command runs the ViReMa algorithm on flock house virus example data. If everything worked, it should produce a file called "FHV_recombinations.txt".
 10. Go back to the command line on your operating system. The next two steps involve entering lines into the command line.
