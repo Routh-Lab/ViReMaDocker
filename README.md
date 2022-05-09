@@ -16,14 +16,14 @@ The above repository contains a Dockerfile for ViReMa version 0.25 with associat
 6. You can now make a container using ```docker run -d -t virema```.
 7. Open Docker Desktop. Navigate to the "Containers/Apps" tab.
 8. If the container is running, hit "CLI". If the container is stopped, hit the "Start" button first.
-9. Type ```python ./ViReMa.py ./FHV_Genome_padded ./FHV_10k.txt FHV_recombinations.txt --Seed 20 --MicroInDel_Length 5``` into the "CLI". This command runs the ViReMa algorithm on flock house virus example data. If everything worked, it should produce a file called "FHV_recombinations.txt".
+9. Type ```python ./ViReMa.py ./FHV_Genome_padded ./FHV_10k.txt FHV_recombinations.sam --Seed 20 --MicroInDel_Length 5 -BED --Output_Dir FHV_Test``` into the "CLI". This command runs the ViReMa algorithm on flock house virus example data. If everything worked, it should produce a file called "FHV_recombinations.sam".
 10. Go back to the command line on your operating system. The next two steps involve entering lines into the command line.
 11. With the container still running, use ```docker container ls``` and copy the container id for the "virema" container.
-12. Export your files from the container to your computer ```docker cp <container-id>:/FHV_recombinations.txt ~/FHV_recombinations.txt```, replacing "```<container-id>```" with the container id from the last step and changing "~/" to a directory on your local computer.
+12. Export your files from the container to your computer. Use the command ```cd C:\Users\user\Documents\Results``` replacing "C:\Users\user\Documents\Results" with where you want the folder to show up on your local machine.  Run ```docker cp <container-id>:/FHV_Test .```, replacing "```<container-id>```" with the container id from the Step 11. The '.' puts the files into the local directory we just used 'cd' to get into.
 13. When finished, stop the container in Docker Desktop or using the command line.
 
 ## **Analysis**
-To analyze the SAM file just produced in the tutorial, convert the file produced into a .BED file using "samtools" (not in the image). You can then create figures and visualizations by following tutorials [here](https://jayeung12.github.io/).
+You can then create figures and visualizations with the newly created files by following tutorials [here](https://jayeung12.github.io/).
 
 ## **Details**
 <details>
